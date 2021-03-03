@@ -1,0 +1,114 @@
+2021-02-25 14:58:20:905 [Appium] Welcome to Appium v1.20.2
+2021-02-25 14:58:20:906 [Appium] Non-default server args:
+2021-02-25 14:58:20:906 [Appium]   logFile: /Users/nicholas/eclipse-workspace/AppiumE2E/AppiumLog.txt
+2021-02-25 14:58:20:906 [Appium]   localTimezone: true
+2021-02-25 14:58:20:930 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2021-02-25 14:58:21:133 [HTTP] --> GET /wd/hub/status
+2021-02-25 14:58:21:133 [HTTP] {}
+2021-02-25 14:58:21:136 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-02-25 14:58:21:137 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.20.2"}}
+2021-02-25 14:58:21:146 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-02-25 14:58:21:146 [HTTP] 
+2021-02-25 14:58:21:641 [HTTP] Request idempotency key: 6df96258-68aa-42e7-931a-8a9ec1fc1b80
+2021-02-25 14:58:21:661 [HTTP] --> POST /wd/hub/session
+2021-02-25 14:58:21:661 [HTTP] {"desiredCapabilities":{"app":"/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk","automationName":"UIAutomator2","platformName":"Android","deviceName":"Nexus6"},"capabilities":{"firstMatch":[{"appium:app":"/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk","appium:automationName":"UIAutomator2","appium:deviceName":"Nexus6","platformName":"android"}]}}
+2021-02-25 14:58:21:662 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk","automationName":"UIAutomator2","platformName":"Android","deviceName":"Nexus6"},null,{"firstMatch":[{"appium:app":"/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk","appium:automationName":"UIAutomator2","appium:deviceName":"Nexus6","platformName":"android"}]}]
+2021-02-25 14:58:21:668 [BaseDriver] Event 'newSessionRequested' logged at 1614293901663 (14:58:21 GMT-0800 (Pacific Standard Time))
+2021-02-25 14:58:22:198 [Appium] Appium v1.20.2 creating new AndroidUiautomator2Driver (v1.61.2) session
+2021-02-25 14:58:22:200 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2021-02-25 14:58:22:200 [BaseDriver] Creating session with W3C capabilities: {
+2021-02-25 14:58:22:200 [BaseDriver]   "alwaysMatch": {
+2021-02-25 14:58:22:200 [BaseDriver]     "platformName": "android",
+2021-02-25 14:58:22:200 [BaseDriver]     "appium:app": "/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk",
+2021-02-25 14:58:22:201 [BaseDriver]     "appium:automationName": "UIAutomator2",
+2021-02-25 14:58:22:201 [BaseDriver]     "appium:deviceName": "Nexus6"
+2021-02-25 14:58:22:201 [BaseDriver]   },
+2021-02-25 14:58:22:201 [BaseDriver]   "firstMatch": [
+2021-02-25 14:58:22:201 [BaseDriver]     {}
+2021-02-25 14:58:22:201 [BaseDriver]   ]
+2021-02-25 14:58:22:201 [BaseDriver] }
+2021-02-25 14:58:22:208 [BaseDriver] Session created with session id: 37d7b69c-9b19-49d1-ac79-4b404d47c559
+2021-02-25 14:58:22:211 [BaseDriver] Using local app '/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk'
+2021-02-25 14:58:22:212 [UiAutomator2] Checking whether app is actually present
+2021-02-25 14:58:22:214 [UiAutomator2] Deleting UiAutomator2 session
+2021-02-25 14:58:22:215 [BaseDriver] Event 'newSessionStarted' logged at 1614293902215 (14:58:22 GMT-0800 (Pacific Standard Time))
+2021-02-25 14:58:22:306 [W3C] Encountered internal error running command: Error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+2021-02-25 14:58:22:306 [W3C]     at requireSdkRoot (/usr/local/lib/node_modules/appium/node_modules/appium-adb/lib/helpers.js:36:11)
+2021-02-25 14:58:22:307 [W3C]     at Function.createADB (/usr/local/lib/node_modules/appium/node_modules/appium-adb/lib/adb.js:55:23)
+2021-02-25 14:58:22:307 [W3C]     at Object.createBaseADB (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/android-helpers.js:108:20)
+2021-02-25 14:58:22:307 [W3C]     at Object.getDeviceInfoFromCaps (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/android-helpers.js:193:29)
+2021-02-25 14:58:22:307 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-driver/lib/driver.js:327:40)
+2021-02-25 14:58:22:307 [W3C]     at AndroidUiautomator2Driver.createSession (/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-driver/lib/driver.js:224:18)
+2021-02-25 14:58:22:308 [W3C]     at AppiumDriver.createSession (/usr/local/lib/node_modules/appium/lib/appium.js:371:35)
+2021-02-25 14:58:22:322 [HTTP] <-- POST /wd/hub/session 500 660 ms - 813
+2021-02-25 14:58:22:322 [HTTP] 
+2021-02-25 14:58:22:395 [HTTP] Request idempotency key: b6f0fdf1-5279-416d-8a5a-b91e0feca60c
+2021-02-25 14:58:22:396 [HTTP] --> POST /wd/hub/session
+2021-02-25 14:58:22:397 [HTTP] {"desiredCapabilities":{"app":"/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk","automationName":"UIAutomator2","platformName":"Android","deviceName":"Nexus6"},"capabilities":{"firstMatch":[{"appium:app":"/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk","appium:automationName":"UIAutomator2","appium:deviceName":"Nexus6","platformName":"android"}]}}
+2021-02-25 14:58:22:398 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk","automationName":"UIAutomator2","platformName":"Android","deviceName":"Nexus6"},null,{"firstMatch":[{"appium:app":"/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk","appium:automationName":"UIAutomator2","appium:deviceName":"Nexus6","platformName":"android"}]}]
+2021-02-25 14:58:22:398 [BaseDriver] Event 'newSessionRequested' logged at 1614293902398 (14:58:22 GMT-0800 (Pacific Standard Time))
+2021-02-25 14:58:22:400 [Appium] Appium v1.20.2 creating new AndroidUiautomator2Driver (v1.61.2) session
+2021-02-25 14:58:22:401 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2021-02-25 14:58:22:402 [BaseDriver] Creating session with W3C capabilities: {
+2021-02-25 14:58:22:402 [BaseDriver]   "alwaysMatch": {
+2021-02-25 14:58:22:402 [BaseDriver]     "platformName": "android",
+2021-02-25 14:58:22:403 [BaseDriver]     "appium:app": "/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk",
+2021-02-25 14:58:22:403 [BaseDriver]     "appium:automationName": "UIAutomator2",
+2021-02-25 14:58:22:403 [BaseDriver]     "appium:deviceName": "Nexus6"
+2021-02-25 14:58:22:403 [BaseDriver]   },
+2021-02-25 14:58:22:404 [BaseDriver]   "firstMatch": [
+2021-02-25 14:58:22:404 [BaseDriver]     {}
+2021-02-25 14:58:22:404 [BaseDriver]   ]
+2021-02-25 14:58:22:404 [BaseDriver] }
+2021-02-25 14:58:22:413 [BaseDriver] Session created with session id: 0ce00878-1327-4e9f-9d91-368ef8a5113d
+2021-02-25 14:58:22:414 [BaseDriver] Using local app '/Users/nicholas/eclipse-workspace/AppiumE2E/src/General-Store.apk'
+2021-02-25 14:58:22:414 [UiAutomator2] Checking whether app is actually present
+2021-02-25 14:58:22:416 [UiAutomator2] Deleting UiAutomator2 session
+2021-02-25 14:58:22:417 [BaseDriver] Event 'newSessionStarted' logged at 1614293902416 (14:58:22 GMT-0800 (Pacific Standard Time))
+2021-02-25 14:58:22:418 [W3C] Encountered internal error running command: Error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+2021-02-25 14:58:22:418 [W3C]     at requireSdkRoot (/usr/local/lib/node_modules/appium/node_modules/appium-adb/lib/helpers.js:36:11)
+2021-02-25 14:58:22:418 [W3C]     at Function.createADB (/usr/local/lib/node_modules/appium/node_modules/appium-adb/lib/adb.js:55:23)
+2021-02-25 14:58:22:419 [W3C]     at Object.createBaseADB (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/android-helpers.js:108:20)
+2021-02-25 14:58:22:419 [W3C]     at Object.getDeviceInfoFromCaps (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/android-helpers.js:193:29)
+2021-02-25 14:58:22:419 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-driver/lib/driver.js:327:40)
+2021-02-25 14:58:22:419 [W3C]     at AndroidUiautomator2Driver.createSession (/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-driver/lib/driver.js:224:18)
+2021-02-25 14:58:22:420 [W3C]     at AppiumDriver.createSession (/usr/local/lib/node_modules/appium/lib/appium.js:371:35)
+2021-02-25 14:58:22:422 [HTTP] <-- POST /wd/hub/session 500 24 ms - 813
+2021-02-25 14:58:22:422 [HTTP] 
+2021-02-25 15:04:59:223 [HTTP] Request idempotency key: 7db51da1-6543-4f37-bf42-f271e853feac
+2021-02-25 15:04:59:228 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at Socket._writeGeneric (net.js:785:11)
+    at Socket._write (net.js:797:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at Socket.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:241:10)
+2021-02-25 15:04:59:234 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at Socket._writeGeneric (net.js:785:11)
+    at Socket._write (net.js:797:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at Socket.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:241:10)
